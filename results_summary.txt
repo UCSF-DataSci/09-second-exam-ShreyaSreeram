@@ -1,0 +1,101 @@
+=== Multiple Regression: Walking Speed Analysis ===
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          walking_speed   R-squared:                       0.801
+Model:                            OLS   Adj. R-squared:                  0.801
+Method:                 Least Squares   F-statistic:                 1.557e+04
+Date:                Wed, 27 Nov 2024   Prob (F-statistic):               0.00
+Time:                        12:07:27   Log-Likelihood:                -5270.6
+No. Observations:               15439   AIC:                         1.055e+04
+Df Residuals:                   15434   BIC:                         1.059e+04
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===================================================================================================
+                                      coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------
+Intercept                           5.6203      0.010    590.054      0.000       5.602       5.639
+education_level[T.Graduate]         0.4045      0.008     53.509      0.000       0.390       0.419
+education_level[T.High School]     -0.7998      0.008   -104.275      0.000      -0.815      -0.785
+education_level[T.Some College]    -0.3959      0.008    -51.340      0.000      -0.411      -0.381
+age                                -0.0303      0.000   -190.922      0.000      -0.031      -0.030
+==============================================================================
+Omnibus:                        5.007   Durbin-Watson:                   1.866
+Prob(Omnibus):                  0.082   Jarque-Bera (JB):                4.997
+Skew:                           0.044   Prob(JB):                       0.0822
+Kurtosis:                       3.006   Cond. No.                         240.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+=== ANOVA: Insurance Type Effect on Costs ===
+F-statistic: 41049.4691638751, p-value: 0.0
+
+Mean Costs by Insurance Type:
+insurance_type
+Basic       998.276111
+Platinum    499.775439
+Premium     751.879725
+Name: visit_cost, dtype: float64
+
+Standard Deviation of Costs by Insurance Type:
+insurance_type
+Basic       115.702328
+Platinum     57.382333
+Premium      86.113922
+Name: visit_cost, dtype: float64
+
+Effect Size (Cohen's d for Basic vs Premium): 2.4162
+
+=== Interaction Effects: Walking Speed Analysis ===
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          walking_speed   R-squared:                       0.801
+Model:                            OLS   Adj. R-squared:                  0.801
+Method:                 Least Squares   F-statistic:                     8897.
+Date:                Wed, 27 Nov 2024   Prob (F-statistic):               0.00
+Time:                        12:07:27   Log-Likelihood:                -5269.6
+No. Observations:               15439   AIC:                         1.056e+04
+Df Residuals:                   15431   BIC:                         1.062e+04
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================================
+                                          coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+Intercept                               5.6194      0.016    361.943      0.000       5.589       5.650
+education_level[T.Graduate]             0.4154      0.024     17.589      0.000       0.369       0.462
+education_level[T.High School]         -0.8173      0.023    -35.038      0.000      -0.863      -0.772
+education_level[T.Some College]        -0.3839      0.024    -15.951      0.000      -0.431      -0.337
+age                                    -0.0303      0.000   -103.933      0.000      -0.031      -0.030
+education_level[T.Graduate]:age        -0.0002      0.000     -0.478      0.633      -0.001       0.001
+education_level[T.High School]:age      0.0003      0.000      0.784      0.433      -0.001       0.001
+education_level[T.Some College]:age    -0.0002      0.000     -0.519      0.604      -0.001       0.001
+==============================================================================
+Omnibus:                        5.082   Durbin-Watson:                   1.866
+Prob(Omnibus):                  0.079   Jarque-Bera (JB):                5.076
+Skew:                           0.044   Prob(JB):                       0.0790
+Kurtosis:                       3.004   Cond. No.                         753.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+=== Mixed-Effects Model: Walking Speed Analysis ===
+                   Mixed Linear Model Regression Results
+============================================================================
+Model:                   MixedLM      Dependent Variable:      walking_speed
+No. Observations:        15439        Method:                  REML         
+No. Groups:              1000         Scale:                   0.1150       
+Min. group size:         11           Log-Likelihood:          -5331.6530   
+Max. group size:         18           Converged:               No           
+Mean group size:         15.4                                               
+----------------------------------------------------------------------------
+                                Coef.  Std.Err.    z     P>|z| [0.025 0.975]
+----------------------------------------------------------------------------
+Intercept                        5.624    0.011  519.759 0.000  5.603  5.645
+education_level[T.Graduate]      0.405    0.008   48.536 0.000  0.388  0.421
+education_level[T.High School]  -0.800    0.008  -94.497 0.000 -0.816 -0.783
+education_level[T.Some College] -0.396    0.009  -46.513 0.000 -0.412 -0.379
+age                             -0.030    0.000 -166.584 0.000 -0.031 -0.030
+Group Var                        0.002    0.003                             
+============================================================================
