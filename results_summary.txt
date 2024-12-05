@@ -4,8 +4,8 @@
 Dep. Variable:          walking_speed   R-squared:                       0.801
 Model:                            OLS   Adj. R-squared:                  0.801
 Method:                 Least Squares   F-statistic:                 1.557e+04
-Date:                Wed, 27 Nov 2024   Prob (F-statistic):               0.00
-Time:                        12:07:27   Log-Likelihood:                -5270.6
+Date:                Thu, 05 Dec 2024   Prob (F-statistic):               0.00
+Time:                        10:31:08   Log-Likelihood:                -5270.6
 No. Observations:               15439   AIC:                         1.055e+04
 Df Residuals:                   15434   BIC:                         1.059e+04
 Df Model:                           4                                         
@@ -29,23 +29,23 @@ Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
 === ANOVA: Insurance Type Effect on Costs ===
-F-statistic: 41049.4691638751, p-value: 0.0
+F-statistic: 41240.609348112164, p-value: 0.0
 
 Mean Costs by Insurance Type:
 insurance_type
-Basic       998.276111
-Platinum    499.775439
-Premium     751.879725
+Basic       1001.987225
+Platinum     499.141090
+Premium      750.358315
 Name: visit_cost, dtype: float64
 
 Standard Deviation of Costs by Insurance Type:
 insurance_type
-Basic       115.702328
-Platinum     57.382333
-Premium      86.113922
+Basic       114.375201
+Platinum     57.206487
+Premium      85.336946
 Name: visit_cost, dtype: float64
 
-Effect Size (Cohen's d for Basic vs Premium): 2.4162
+Effect Size (Cohen's d for Basic vs Premium): 2.4939
 
 === Interaction Effects: Walking Speed Analysis ===
                             OLS Regression Results                            
@@ -53,8 +53,8 @@ Effect Size (Cohen's d for Basic vs Premium): 2.4162
 Dep. Variable:          walking_speed   R-squared:                       0.801
 Model:                            OLS   Adj. R-squared:                  0.801
 Method:                 Least Squares   F-statistic:                     8897.
-Date:                Wed, 27 Nov 2024   Prob (F-statistic):               0.00
-Time:                        12:07:27   Log-Likelihood:                -5269.6
+Date:                Thu, 05 Dec 2024   Prob (F-statistic):               0.00
+Time:                        10:31:08   Log-Likelihood:                -5269.6
 No. Observations:               15439   AIC:                         1.056e+04
 Df Residuals:                   15431   BIC:                         1.062e+04
 Df Model:                           7                                         
