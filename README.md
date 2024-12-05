@@ -139,8 +139,8 @@ Line Plot of Education-Age Interactions:
 ![Line Plot of Education-Age Interactions](lineplot_age_education_interaction.png)
 
 
-#### **Box Plot of Visit Cost Distributions by Insurance Type :**
-![Box Plot of Visit Cost Distributions by Insurance Type](boxplot_costs_insurance.png)
+#### **Bar Plot of Visit Cost Distributions by Insurance Type :**
+![Bar Plot of Visit Cost Distributions by Insurance Type](barplot_costs_insurance.png)
 
 
 #### **Pair Plot of Key Variable :**
